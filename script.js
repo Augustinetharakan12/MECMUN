@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$("#main-page").css("height",$(window).height())
+	$("#main-page").css("height",screen.availHeight-(screen.availHeight/4));
 
 	var $animation_elements = $('.animation-element');
 	var $window = $(window);
@@ -30,6 +30,7 @@ $(document).ready(function(){
 	$window.on('scroll resize', check_if_in_view);
 	$window.trigger('scroll');
 	console.log($window.height());
+	console.log(screen.height);
 });
 
 

@@ -1,9 +1,16 @@
 
 body{
 	background-color:#030f1b;
+	color:white !important;
 }
 nav{
 	background-color:black;
+}
+.sidenav{
+	background-color:#052035;
+}
+.sidenav li>a{
+	color:white !important;
 }
 
 #main-page img{
@@ -30,7 +37,8 @@ nav{
 	transform: translate3d(0px, 0px, 0px);*/
 }
 #main-page .content h2{
-	font-size:30px;
+	text-align: left;
+	font-size:50px;
 	color:white;
 }
 .one{
@@ -61,6 +69,18 @@ nav{
     from {opacity:0;}
     to {opacity:1;}
 }
+
+#page-2 img{
+	width:80%;
+	border-radius:50%;
+	display:block;
+	margin-left: auto;
+    margin-right: auto;
+}
+#page-2 p{
+	text-align: center;
+}
+
 
 .page-footer p{
 	font-size:15px;
