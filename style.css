@@ -1,3 +1,71 @@
-h1{
+
+body{
+	background-color:#030f1b;
+}
+nav{
+	background-color:black;
+}
+
+#main-page img{
+	width:100%;
+	text-align: center;
+
+}
+
+.animation-element.fade-in {
+	opacity: 0;
+	-moz-transition: all 2000ms linear;
+	-webkit-transition: all 2000ms linear;
+	-o-transition: all 2000ms linear;
+	transition: all 2000ms linear;
+
+}
+
+.animation-element.fade-in.in-view {
+	opacity: 1;
+	/*-moz-transform: translate3d(0px, 0px, 0px);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate3d(0px, 0px, 0px);*/
+}
+#main-page .content h2{
+	font-size:30px;
+	color:white;
+}
+.one{
+	opacity:0;
+/*	-webkit-animation: main-page-content-animation 3s forwards;
+    -webkit-animation-delay: 1s; */
+
+    animation: main-page-content-animation 3s forwards;
+    animation-delay: 1s;
+}
+.two{
+	opacity:0;
+	animation:main-page-content-animation 3s forwards;
+	animation-delay:2s;
+}
+.three{
+	opacity:0;
+	animation:main-page-content-animation 3s forwards;
+	animation-delay:3s;
+}	
+
+/*@-webkit-keyframes main-page-content-animation {
+    from {opacity:0;}
+    to {opacity:1;}
+}*/
+
+@keyframes main-page-content-animation {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+.page-footer p{
+	font-size:15px;
 	color:brown;
+}
+.page-footer{
+	background-color:black;
 }
