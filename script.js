@@ -1,12 +1,14 @@
 $(document).ready(function(){
 
-	$("#main-page").css("height",screen.availHeight-(screen.availHeight/4));
+	$("#main-page").css("height",screen.availHeight-(screen.availHeight)/4);
 
 	var $animation_elements = $('.animation-element');
 	var $window = $(window);
 
+	console.log($animation_elements);
+
 	function check_if_in_view() {
-	  var window_height = $window.height();
+	  var window_height = screen.availHeight;
 	  var window_top_position = $window.scrollTop();
 	  var window_bottom_position = (window_top_position + window_height);
 	 
@@ -20,10 +22,12 @@ $(document).ready(function(){
 	    //check to see if this current container is within viewport
 	    if ((element_bottom_position >= window_top_position) &&
 	        (element_top_position <= window_bottom_position)) {
-	      $element.addClass('in-view');
-	    }// else {
-	    //   $element.removeClass('in-view');
-	    // }
+	    	console.log(element_bottom_position+' '+element_top_position + ' '+window_bottom_position+' '+window_top_position);
+	    	console.log($element[0])
+	    	$element.addClass('in-view');
+	    }//else {
+	    //	$element.removeClass('in-view');
+	    //}
 	  });
 	}
 

@@ -21,10 +21,10 @@ nav{
 
 .animation-element.fade-in {
 	opacity: 0;
-	-moz-transition: all 2000ms linear;
-	-webkit-transition: all 2000ms linear;
-	-o-transition: all 2000ms linear;
-	transition: all 2000ms linear;
+	-moz-transition: all 3000ms linear;
+	-webkit-transition: all 3000ms linear;
+	-o-transition: all 3000ms linear;
+	transition: all 3000ms linear;
 
 }
 
@@ -47,17 +47,17 @@ nav{
     -webkit-animation-delay: 1s; */
 
     animation: main-page-content-animation 3s forwards;
-    animation-delay: 1s;
+    animation-delay: 500ms;
 }
 .two{
 	opacity:0;
 	animation:main-page-content-animation 3s forwards;
-	animation-delay:2s;
+	animation-delay:1200ms;
 }
 .three{
 	opacity:0;
 	animation:main-page-content-animation 3s forwards;
-	animation-delay:3s;
+	animation-delay:1900ms;
 }	
 
 /*@-webkit-keyframes main-page-content-animation {
@@ -71,15 +71,42 @@ nav{
 }
 
 #page-2 img{
+
 	width:80%;
 	border-radius:50%;
 	display:block;
 	margin-left: auto;
     margin-right: auto;
 }
+
+#page-2 .animation-element{
+	opacity: 0;
+	-moz-transition: all 1500ms linear;
+	-webkit-transition: all 1500ms linear;
+	-o-transition: all 1500ms linear;
+	transition: all 1500ms linear;
+
+	-moz-transform: translate3d(-150px, 0px, 0px);
+	-webkit-transform: translate3d(-150px, 0px, 0px);
+	-o-transform: translate(-150px, 0px);
+	-ms-transform: translate(-150px, 0px);
+	transform: translate3d(-150px, 0px, 0px);
+
+}
+
+#page-2 .animation-element.in-view {
+	opacity: 1;
+	-moz-transform: translate3d(0px, 0px, 0px);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+}
+
 #page-2 p{
 	text-align: center;
 }
+
 
 
 .page-footer p{
