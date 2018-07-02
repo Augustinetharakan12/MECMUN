@@ -6,7 +6,14 @@ body{
 nav{
 	position:fixed;
 	background-color:black;
-	z-index: 1;
+	z-index: 10003;
+}
+div:first-child{
+	z-index: -1;
+}
+.main-page div:nth-child(2n){
+	opacity: 0 !important;
+	top :-100px;
 }
 .sidenav{
 	background-color:#052035;
@@ -14,10 +21,13 @@ nav{
 .sidenav li>a{
 	color:white !important;
 }
-
+#main-page{
+	z-index: 10001
+}
 #main-page img{
 	width:100%;
 	text-align: center;
+	z-index: 10002;
 
 }
 

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$("#main-page").css("height",screen.availHeight-(screen.availHeight)/4);
-
+	$(".count-particles").css("opacity",0);
 	var $animation_elements = $('.animation-element');
 	var $window = $(window);
 
