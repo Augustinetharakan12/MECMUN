@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 	$("#main-page").css("height",screen.availHeight-(screen.availHeight)/4);
 	
+
 	var $animation_elements = $('.animation-element');
 	var $window = $(window);
 	var lastScrollTop = 0;
