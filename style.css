@@ -33,8 +33,6 @@ div > canvas:nth-child(1):not(.particles-js-canvas-el){
 	background-color: #fff;
 	height: 100%;
 	width: 100%;
-	
-	
 	position: absolute; 
 }
 
@@ -53,18 +51,14 @@ div > canvas:nth-child(1):not(.particles-js-canvas-el){
 	text-align: center;
 	z-index: 10002;
 	opacity:0.8;
-
 }
-
 .animation-element.fade-in {
 	opacity: 0;
 	-moz-transition: all 3000ms linear;
 	-webkit-transition: all 3000ms linear;
 	-o-transition: all 3000ms linear;
 	transition: all 3000ms linear;
-
 }
-
 .animation-element.fade-in.in-view {
 	opacity: 1;
 	/*-moz-transform: translate3d(0px, 0px, 0px);
@@ -82,7 +76,6 @@ div > canvas:nth-child(1):not(.particles-js-canvas-el){
 	opacity:0;
 /*	-webkit-animation: main-page-content-animation 3s forwards;
     -webkit-animation-delay: 1s; */
-
     animation: main-page-content-animation 3s forwards;
     animation-delay: 500ms;
 }
@@ -96,41 +89,43 @@ div > canvas:nth-child(1):not(.particles-js-canvas-el){
 	animation:main-page-content-animation 3s forwards;
 	animation-delay:1900ms;
 }	
-
 /*@-webkit-keyframes main-page-content-animation {
     from {opacity:0;}
     to {opacity:1;}
 }*/
-
 @keyframes main-page-content-animation {
     from {opacity:0;}
     to {opacity:1;}
 }
 
-#secretariat img{
 
+
+
+#gallery h2{
+	text-align: center;
+}
+
+
+
+#secretariat img{
 	width:80%;
 	border-radius:50%;
 	display:block;
 	margin-left: auto;
     margin-right: auto;
 }
-
 #secretariat .animation-element{
 	opacity: 0;
 	-moz-transition: all 1500ms linear;
 	-webkit-transition: all 1500ms linear;
 	-o-transition: all 1500ms linear;
 	transition: all 1500ms linear;
-
 	-moz-transform: translate3d(-150px, 0px, 0px);
 	-webkit-transform: translate3d(-150px, 0px, 0px);
 	-o-transform: translate(-150px, 0px);
 	-ms-transform: translate(-150px, 0px);
 	transform: translate3d(-150px, 0px, 0px);
-
 }
-
 #secretariat .animation-element.in-view {
 	opacity: 1;
 	-moz-transform: translate3d(0px, 0px, 0px);
@@ -139,16 +134,11 @@ div > canvas:nth-child(1):not(.particles-js-canvas-el){
 	-ms-transform: translate(0px, 0px);
 	transform: translate3d(0px, 0px, 0px);
 }
-
 #secretariat p{
 	text-align: center;
 }
-
-
-
 .page-footer p{
 	font-size:15px;
-	color:brown;
 }
 .page-footer{
 	background-color:black;
