@@ -1,9 +1,27 @@
 $(document).ready(function(){
 
 	$("#main-page").css("height",screen.availHeight-(screen.availHeight)/4);
-
+	
 	var $animation_elements = $('.animation-element');
 	var $window = $(window);
+	var lastScrollTop = 0;
+
+	$(window).scroll(function(event){
+	   var st = $(this).scrollTop();
+	   if(st == 0){
+	   	$("nav").addClass('scroll-up');
+	   	$("nav").removeClass('scroll-down');
+	   }
+	   else if (st > lastScrollTop ){
+	    $("nav").removeClass('scroll-up');
+	    $("nav").addClass('scroll-down');
+	   } else {
+	   	$("nav").addClass('scroll-up');
+	   	$("nav").removeClass('scroll-down');
+	   }
+	   lastScrollTop = st;
+	   console.log("last scroll top= "+lastScrollTop);
+	});
 
 	console.log($animation_elements);
 

@@ -9,6 +9,9 @@ nav{
 	background-color:black;
 	z-index: 10003;
 }
+div > canvas:nth-child(1){
+	visibility: hidden !important;
+}
 
 .loader {
 	background: none repeat scroll 0 0 #ffffff;
