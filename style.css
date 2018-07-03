@@ -52,6 +52,7 @@ div > canvas:nth-child(1):not(.particles-js-canvas-el){
 	width:100%;
 	text-align: center;
 	z-index: 10002;
+	opacity:0.8;
 
 }
 
