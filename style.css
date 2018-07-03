@@ -2,21 +2,16 @@
 body{
 	background-color:#030f1b;
 	color:white !important;
+	scroll-behavior:smooth;
 }
 nav{
 	position:fixed;
 	background-color:black;
 	z-index: 10003;
 }
-div:first-child{
-	z-index: -1;
-}
-.main-page div:nth-child(2n){
-	opacity: 0 !important;
-	top :-100px;
-}
 .sidenav{
 	background-color:#052035;
+	z-index:10004;
 }
 .sidenav li>a{
 	color:white !important;
@@ -82,7 +77,7 @@ div:first-child{
     to {opacity:1;}
 }
 
-#page-2 img{
+#secretariat img{
 
 	width:80%;
 	border-radius:50%;
@@ -91,7 +86,7 @@ div:first-child{
     margin-right: auto;
 }
 
-#page-2 .animation-element{
+#secretariat .animation-element{
 	opacity: 0;
 	-moz-transition: all 1500ms linear;
 	-webkit-transition: all 1500ms linear;
@@ -106,7 +101,7 @@ div:first-child{
 
 }
 
-#page-2 .animation-element.in-view {
+#secretariat .animation-element.in-view {
 	opacity: 1;
 	-moz-transform: translate3d(0px, 0px, 0px);
 	-webkit-transform: translate3d(0px, 0px, 0px);
@@ -115,7 +110,7 @@ div:first-child{
 	transform: translate3d(0px, 0px, 0px);
 }
 
-#page-2 p{
+#secretariat p{
 	text-align: center;
 }
 

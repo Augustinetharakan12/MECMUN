@@ -35,7 +35,7 @@
 		</script>
 
 		<style>
-			/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #030f1b; background-repeat:repeat; background-size: 20%; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #030f1b; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+			/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ z-index:-1;position:fixed; width: 100%; height: 100%; background-color: #030f1b; background-repeat:repeat; background-size: 20%; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ z-index:-1;background: #030f1b; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ z-index:-1;font-size: 1.1em; } #stats, .count-particles{ z-index:-1;-webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{opacity:0; border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{z-index:-1; border-radius: 0 0 3px 3px; }
 		</style>
 
 		<!-- Compiled and minified JavaScript -->
@@ -54,7 +54,7 @@
 		        <li><a href="#">Home</a></li>
 		        <li><a href="#">Councils</a></li>
 		        <li><a href="#">Delegate</a></li>
-		        <li><a href="#Secretariat">Secretariat</a></li>
+		        <li><a href="#secretariat">Secretariat</a></li>
 		        <li><a href="#">Sponsors</a></li>
 		      </ul>
 		    </div>
@@ -64,7 +64,7 @@
 	   	  <li><a href="#">Home</a></li>
 	        <li><a href="#">Councils</a></li>
 	        <li><a href="#">Delegate</a></li>
-	        <li><a href="#Secretariat">Secretariat</a></li>
+	        <li><a href="#secretariat">Secretariat</a></li>
 	        <li><a href="#">Sponsors</a></li>
 	      <hr>
 		  </ul>
@@ -90,7 +90,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="page-2">
+				<div id="secretariat">
 					<h2 class="center">Secretariat</h2>
 					
 					<div class="col l4 m12 s12 animation-element">	
